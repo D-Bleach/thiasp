@@ -1,0 +1,8 @@
+﻿@model IEnumerable<thi1.Models.Phong>
+
+@foreach(var item in Model)
+            {
+                <li>
+                    <a href="/nhanViens/nhanvienbyphong/@item.Maphong" class="nav-link">@item.Tenphong</a>
+                </li>
+            }

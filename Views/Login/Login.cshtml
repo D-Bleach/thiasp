@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/View.cshtml";
+}
+<style>
+    .content{
+        width:200px;
+        height200px;
+        border-radius:10px;
+        background-color:aqua;
+        display:flex;
+        flex-direction:column;
+        justify-content:flex-start;
+        align-items:center;
+    }
+    .form-group{
+        margin-bottom:10px;
+    }
+</style>
+<div class="content">
+    <h2>Đăng nhập</h2>
+    <form method="post" action="/Login/Login">
+        <div class="form-group">
+            <label>Username:</label>
+            <input name="username" />
+        </div>
+        <div class="form-group">
+            <label>Passwork:</label>
+            <input name="password" />
+        </div>
+        <button type="submit">Đăng nhập</button>
+    </form>
+</div>
+
